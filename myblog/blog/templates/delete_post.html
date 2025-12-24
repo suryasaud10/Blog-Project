@@ -1,7 +1,7 @@
 <!-- blog/templates/blog/delete_post.html -->
  {% extends 'base.html' %}
 {% block content %}
-<h2>Delete Post</h2>
+<h4>Delete Post</h4>
 <form method="post">
     {% csrf_token %}
     <p>Are you sure you want to delete "{{ post.title }}"?</p>

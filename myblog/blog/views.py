@@ -3,6 +3,11 @@ from .models import Post
 from .forms import PostForm
 
 # Create your views here.
+
+def home(request):
+    return render(request, 'home.html')
+
+    
 def post_list(request):
     posts = Post.objects.all()
     return render(request, 'post_list.html', {'posts': posts})
